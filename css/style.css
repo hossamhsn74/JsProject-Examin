@@ -1,0 +1,623 @@
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #F0F0F0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: myFont;
+	src: url('webfonts/LobsterRegular.ttf') format('.ttf');
+}
+
+/* ---------------------------------- Home page design ---------------------------------------- */
+
+header,
+footer,
+.sliderSection,
+.teamMemberSection,
+.aboutUsSection,
+.registerPageMainContainer,
+.memberTeamMainContainer {
+	width: 100%;
+	display: block;
+	margin: 30px auto;
+}
+
+.container,
+.footerContainer,
+.sliderPicture,
+.thumbs,
+.imageWithArrows,
+.teamMember,
+.aboutUsContainer,
+.formContainer,
+hr,
+.login,
+.teamMemberContent,
+.teamheader,
+.preExamButton,
+#questionsDiv,
+.resultContainer,
+#timerDiv {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+}
+
+hr {
+	/* height: 1px;
+	color: #CCC;
+	border: 1px solid; */
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+header {
+	margin: 0 auto;
+
+}
+
+.leftSide {
+	width: 47%;
+	display: flex;
+}
+
+.leftSide img {
+
+	margin: auto 10px;
+	display: block;
+
+}
+
+.login {
+	display: block;
+	margin: 0;
+}
+
+.footerMenu,
+.aboutUsLeftSide,
+.aboutUsRightSide {
+	width: 50%;
+}
+
+.rightSide,
+.footerLogin {
+	width: 53%;
+}
+
+.menu ul,
+.footerMenu ul {
+	padding: 0;
+}
+
+.menu ul li,
+.footerMenu ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 5px;
+	margin-left: 10px;
+}
+
+.footerMenu ul li a:nth-child(1) {
+	margin-left: 0;
+}
+
+.menu ul li a,
+.footerMenu ul li a {
+	text-decoration: none;
+	color: dodgerblue;
+	font-size: 14pt;
+	font-family: myFont;
+	/*	font-family: sans-serif;*/
+}
+
+.menu ul li:nth-child(1) {
+	margin: 0;
+}
+
+.menu ul li a:hover,
+.footerMenu ul li a:hover {
+	color: blue;
+}
+
+.menuIcon {
+	padding: 2px;
+	color: #000;
+	margin-top: 2px;
+	text-align: center;
+}
+
+.imageWithArrows {
+	display: flex;
+}
+
+.leftArrow,
+.rightArrow {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.leftArrow:hover,
+.rightArrow:hover {
+	cursor: pointer;
+}
+
+/* *******************************************Slider *************************** */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: 10px auto;
+}
+
+.mySlides img {
+	width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+	color: #000;
+	font-size: 17pt;
+
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+
+/* *******************************************End Slider *************************** */
+/* *******************************************TEAM MEMBER SECTIOn *************************** */
+
+.teamheader {
+	margin: 30px auto;
+}
+
+.teamheader h2 {
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.teamMember div {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.teamMember div img {
+	width: 50%;
+	height: 50%;
+	border-radius: 50%;
+	border: 2px solid dodgerblue;
+	display: block;
+	margin: auto;
+}
+
+
+.teamMember div p {
+	font-size: 15pt;
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.teamMember div p:nth-child(3) {
+	font-size: 11pt;
+}
+
+.aboutUsLeftSide img {
+	width: 66%;
+	height: 94%;
+}
+
+/* ---------------------------------- Register page design ---------------------------------------- */
+.formContainer {
+	display: block;
+}
+
+.input-container {
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.input-container span {
+	margin: 10px 5px;
+	font-size: 10pt;
+	color: red;
+
+}
+
+/* Style the form icons */
+.icon {
+	padding: 10px;
+	background: dodgerblue;
+	color: white;
+	min-width: 50px;
+	text-align: center;
+}
+
+.input-field {
+	width: 50%;
+	padding: 10px;
+	outline: none;
+}
+
+.input-field:focus {
+	border: 2px solid dodgerblue;
+}
+
+.button-wrapper {
+	display: flex;
+}
+
+.button-wrapper button {
+	width: 20%;
+	font-size: 11pt;
+	font-weight: 400;
+	margin: 10px;
+}
+
+.button-wrapper button:nth-child(1) {
+	margin: 10px 0;
+}
+
+.btn,
+.toHome,
+.tryAgain,
+.questionDivClass button {
+	background-color: dodgerblue;
+	color: white;
+	padding: 15px 20px;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+	opacity: 0.9;
+}
+
+.btn:hover {
+	opacity: 1;
+}
+
+.gender {
+	width: 15%;
+	padding: 10px;
+	font-size: 13pt;
+	background-color: dodgerblue;
+	color: #FFF;
+}
+
+/* ---------------------------------- End of register page design ---------------------------------------- */
+/* ---------------------------------- Team Member Page Design--------------------------------------------*/
+.teamMemberContent {
+	display: block;
+}
+
+.memberDiv {
+	width: 100%;
+	display: flex;
+	margin: 30px 0;
+}
+
+.teamMemberImage {
+	width: 20%;
+	display: inline;
+}
+
+.teamMemberImage img {
+	width: 60%;
+	height: 70%;
+	border-radius: 50%;
+	border: 2px solid dodgerblue;
+	display: block;
+	margin: auto;
+}
+
+.typoDiv {
+	width: 70%;
+	display: inline-block;
+}
+
+.typoDiv p {
+	font-size: 12pt;
+	font-weight: 400;
+	margin: 10px;
+}
+
+.typoDiv p:nth-child(1) {
+	font-size: 15pt;
+	color: dodgerblue;
+	font-weight: bold;
+}
+
+.typoDiv ul li {
+	margin: 5px;
+	font-size: 12pt;
+	font-weight: 700;
+}
+
+
+/* ----------------------------------End Of  Team Member Page Design------------------------------------*/
+/* ----------------------------------  Exam Page Design------------------------------------*/
+.tipsDiv h2 {
+	text-align: center;
+	margin: 10px auto;
+}
+
+.preExamButton {
+	width: 50%
+}
+
+#disclaimerText {
+	font-size: 13pt;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+#startButton,
+#goHomeButton {
+	margin: 10px auto;
+	width: 30%;
+	background-color: dodgerblue;
+	color: white;
+	padding: 13px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.9;
+	font-size: 11pt;
+	font-weight: 500;
+}
+
+#questionsDiv {
+	display: block;
+}
+
+#questionsDiv p {
+	font-size: 12pt;
+	color: black;
+}
+
+#questionsDiv input {
+	display: flex
+}
+
+.questionDivClass > p,
+#timerDiv {
+	font-size: 12pt;
+	font-weight: 600;
+}
+
+.questionDivClass div {
+	display: flex;
+	width: 50%;
+}
+.questionDivClass div > input{
+	margin-right: 5px;
+}
+#timerDiv p {
+	background-color: red;
+	color: ghostwhite;
+	text-align: center;
+margin-left:auto;
+	margin-right:0;
+	padding: 18px;
+	border-radius: 50%;
+/*	position: fixed;*/
+/*	float: right;*/
+}
+
+.questionDivClass button {
+	width: 20%;
+	font-size: 12pt;
+	font-weight: 400;
+	margin: 10px;
+}
+
+/* ----------------------------------End Of Exam Page Design------------------------------------*/
+/* ----------------------------------Result Page Design------------------------------------*/
+
+.resultContainer {
+	display: block;
+}
+
+.resultSubContainer {
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+
+.canvasContainer {
+	width: 80%;
+	margin: auto;
+}
+
+#result,
+#resultbtn {
+	font-size: 13pt;
+	font-weight: 600;
+	text-align: center;
+	margin: 10px auto;
+
+}
+
+#resultbtn {}
+
+/* ----------------------------------End Of Result Page Design------------------------------------*/
+/* ---------------------------------- Footer  design ---------------------------------------- */
+
+.login form .input-container {
+	display: inline;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.login form .input-container:nth-child(2) {
+	margin-left: 5px;
+}
+
+/* Style the form icons */
+.login form .icon {
+	padding: 7px;
+	background: dodgerblue;
+	color: white;
+	min-width: 20px;
+	text-align: center;
+	margin: -4px;
+}
+
+.login form .input-field {
+	width: 25%;
+	padding: 6px;
+	outline: none;
+}
+
+.login form .input-field:focus {
+	border: 2px solid dodgerblue;
+}
+
+.login form .button-wrapper button {
+	display: inline-block;
+}
+
+.login form .btn {
+	background-color: dodgerblue;
+	color: white;
+	padding: 7px;
+	border: none;
+	cursor: pointer;
+	width: 15%;
+	opacity: 0.9;
+}
+
+.login form .btn:hover {
+	opacity: 1;
+}
+
+#name,
+#name1 {
+	width: 50%;
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+#name span,
+#name1 span {
+	margin: 0 10px;
+}
+
+#name span:nth-child(1),
+#name1 span:nth-child(1) {
+	font-size: 13pt;
+	color: dodgerblue;
+	color: dodgerblue;
+}
+
+.logoutBtn {
+	color: white;
+	background-color: red;
+	padding: 5px;
+	cursor: pointer;
+	font-size: 11pt;
+}
+
+#name span:nth-child(2):hover {
+	cursor: pointer;
+}
+
+.footerMenu ul li {
+	list-style-type: square;
+	display: block;
+}

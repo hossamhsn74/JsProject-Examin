@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Team Members</title>
+	<link rel='icon' href='images/favicon.png' type='image/x-icon' />
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="leftSide">
+				<img src="images/logo.png" alt="Logo picture">
+			</div>
+			<div class="rightSide">
+				<div id="name"></div>
+				<div class="login">
+					<form id="mainForm" action="members.html" method="post">
+
+						<div class="input-container">
+							<i class="fa fa-envelope icon"></i>
+							<input id="loginEmail" class="input-field" type="email" placeholder="Email" name="email">
+						</div>
+						<div class="input-container">
+							<i class="fa fa-key icon"></i>
+							<input id="loginPassword" class="input-field" type="password" placeholder="Password" name="psw">
+							<!--							<span></span>-->
+						</div>
+						<button id="loginBtn" class="btn" type="button" name="button">Login</button>
+					</form>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="register.html">Register</a></li>
+						<li><a href="members.html">About Us</a></li>
+						<li><a href="exam.html">Exam</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<hr>
+	<div class="memberTeamMainContainer">
+		<div class="teamMemberContent">
+
+			<h1> Our Creative Team</h1>
+			<div class="memberDiv">
+				<div class="teamMemberImage">
+					<img src="images/3.jpeg" alt="team member image" />
+				</div>
+				<div class="typoDiv">
+					<P>Hossam Hassan</P>
+					<P> Python Full Stack Developer Responsible for : </P>
+					<ul>
+						<li>Design the Exam Page </li>
+						<li>Get Json From local Server and use it </li>
+						<li>Connecting between Exam Page and result Page</li>
+						<li>Participating in styling the Site </li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="memberDiv">
+				<div class="teamMemberImage">
+					<img src="images/1.jpeg" alt="team member image" />
+				</div>
+				<div class="typoDiv">
+					<P>Mohamed Elsayed</P>
+					<P> Python Full Stack Developer Responsible for : </P>
+					<ul>
+						<li>Design the Result Page with Using Canvas </li>
+						<li>Design the About us Page </li>
+						<li>Registration Form Validation </li>
+						<li>Participating in styling the Site </li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="memberDiv">
+				<div class="teamMemberImage">
+					<img src="images/2.jpeg" alt="team member image" />
+				</div>
+				<div class="typoDiv">
+					<P>Abdou Elnemr</P>
+					<P> Python Full Stack Developer Responsible for : </li>
+					<ul>
+						<li> Design the HomePage and slider animation</li>
+						<li> Perform the login and register operations using Local Storage</li>
+						<li>Design the About us Page </li>
+						<li>Participating in styling the Site </li>
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<hr>
+
+	<footer>
+		<div class="footerContainer">
+			<div class="footerMenu">
+				<ul>
+					<li><img src="images/logo.png" alt="Logo picture"></li>
+					<li><i class="fa fa-angle-right   menuIcon"></i><a href="index.html">Home</a></li>
+					<li><i class="fa fa-angle-right   menuIcon"></i><a href="register.html">Register</a></li>
+					<li><i class="fa fa-angle-right   menuIcon"></i><a href="members.html">About Us</a></li>
+					<li><i class="fa fa-angle-right   menuIcon"></i><a href="exam.html">Exam</a></li>
+
+				</ul>
+			</div>
+
+			<div id="name1"></div>
+
+			<div class="footerLogin">
+				<form id="mainForm" action="members.html" method="post">
+
+					<div class="input-container">
+						<i class="fa fa-envelope icon"></i>
+						<input id="footerLoginEmail" class="input-field" type="email" placeholder="Email" name="email">
+					</div>
+					<div class="input-container">
+						<i class="fa fa-key icon"></i>
+						<input id="footerLoginPassword" class="input-field" type="password" placeholder="Password" name="psw">
+						<!--						<span></span>-->
+					</div>
+
+					<button id="footerLoginButton" class="btn" type="button" name="button">Login</button>
+				</form>
+			</div>
+
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>

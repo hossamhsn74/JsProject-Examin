@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Register Page</title>
+	<link rel='icon' href='images/favicon.png' type='image/x-icon'/>
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="leftSide">
+				<img src="images/logo.png" alt="Logo picture">
+			</div>
+			<div class="rightSide">
+				<div id="name"></div>
+				<div class="login">
+					<form id="mainForm" action="register.html" method="post">
+
+						<div class="input-container">
+							<i class="fa fa-envelope icon"></i>
+							<input id="loginEmail" class="input-field" type="email" placeholder="Email" name="email">
+						</div>
+						<div class="input-container">
+							<i class="fa fa-key icon"></i>
+							<input id="loginPassword" class="input-field" type="password" placeholder="Password" name="psw">
+<!--							<span></span>-->
+						</div>
+						<button id="loginBtn" class="btn" type="button" name="button">Login</button>
+					</form>
+				</div>
+
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="register.html">Register</a></li>
+						<li><a href="members.html">About Us</a></li>
+						<li><a href="exam.html">Exam</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<hr>
+	<div class="registerPageMainContainer">
+		<div class="formContainer">
+			<!--		action="register.html"-->
+			<form action="register.html" method="post">
+
+				<div class="input-container">
+					<i class="fa fa-user icon"></i>
+					<input class="input-field" type="text" placeholder="First Name" name="usrnm">
+					<span class="errorSpan"></span>
+				</div>
+
+				<div class="input-container">
+					<i class="fa fa-user icon"></i>
+					<input class="input-field" type="text" placeholder="Last Name" name="usrnm">
+					<span class="errorSpan"></span>
+				</div>
+
+				<div class="input-container">
+					<i class="fa fa-user icon"></i>
+					<input class="input-field" type="text" placeholder="User Name" name="usrnm">
+					<span class="errorSpan"></span>
+				</div>
+
+				<div class="input-container">
+					<i class="fa fa-key icon"></i>
+					<input class="input-field" type="password" placeholder="Password" name="psw">
+					<span class="errorSpan"></span>
+				</div>
+
+
+				<div class="input-container">
+					<i class="fa fa-envelope icon"></i>
+					<input class="input-field" type="text" placeholder="City" name="city">
+					<span class="errorSpan"></span>
+				</div>
+
+				<div class="input-container">
+					<i class="fa  fa-map-marker-alt icon"></i>
+					<input class="input-field" type="textarea" rows="8" cols="50" placeholder="Address" name="address">
+					<span class="errorSpan"></span>
+				</div>
+
+				<div class="gender">
+					<input type="radio" value="None" id="male" name="gender" />
+					<label for="male" class="radio" chec>Male</label>
+					<input type="radio" value="None" id="female" name="gender" />
+					<label for="female" class="radio">Female</label>
+					<span class="errorSpan"></span>
+				</div>
+
+				<div class="button-wrapper">
+					<button type="submit" id="regBTN" class="btn">Register</button>
+					<button type="reset" id="clearBTN" class="btn">Reset</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+	<hr>
+
+	<footer>
+		<div class="footerContainer">
+			<div class="footerMenu">
+				<ul>
+					<li><img src="images/logo.png" alt="Logo picture"></li>
+					<li><i class="fa fa-angle-right   menuIcon"></i><a href="index.html">Home</a></li>
+					<li><i class="fa fa-angle-right   menuIcon"></i><a href="register.html">Register</a></li>
+					<li><i class="fa fa-angle-right   menuIcon"></i><a href="members.html">About Us</a></li>
+					<li><i class="fa fa-angle-right   menuIcon"></i><a href="exam.html">Exam</a></li>
+
+				</ul>
+			</div>
+			<div id="name1"></div>
+
+			<div class="footerLogin">
+ 				<form id="mainForm" action="register.html" method="post">
+
+					<div class="input-container">
+						<i class="fa fa-envelope icon"></i>
+						<input id="footerLoginEmail" class="input-field" type="email" placeholder="Email" name="email">
+					</div>
+					<div class="input-container">
+						<i class="fa fa-key icon"></i>
+						<input id="footerLoginPassword" class="input-field" type="password" placeholder="Password" name="psw">
+<!--						<span></span>-->
+					</div>
+
+					<button id="footerLoginButton" class="btn" type="button" name="button">Login</button>
+				</form>
+ 			</div>
+
+		</div>
+	</footer>
+ 	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+
+
+</body>
+
+</html>
